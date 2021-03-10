@@ -63,6 +63,8 @@ namespace Pizarra
             TabletModeController.SetTabletMode(true);
             Display.Rotate(1, Display.Orientations.DEGREES_CW_0); // 90：横 0：縦
 
+            isRotate = true;
+
             // we need to start listening again for more data
             _device.ReadReport(OnReport);
         }
